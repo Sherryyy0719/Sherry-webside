@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>我的网页</title>
+    <style>
+        .image-container {
+            display: flex; /* 使用 Flexbox */
+            flex-wrap: wrap; /* 允许换行 */
+            justify-content: space-around; /* 水平居中并分配空间 */
+        }
+
+        .product-item img {
+            width: 300px; /* 设置宽度为 300px */
+            height: 200px; /* 设置高度为 200px */
+            object-fit: cover; /* 确保图片按比例缩放并裁剪 */
+        }
+
+        .product-grid {
+            padding: 30px; /* 添加一些内边距 */
+            display: flex;
+            flex-wrap: wrap; /* 允许换行 */
+            justify-content: center; /* 居中对齐 */
+        }
+
+        .product-item {
+            margin: 30px; /* 添加一些外边距 */
+            text-align: center; /* 文字居中对齐 */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Welcome to 精选农产品</h1>
+        <p>商品分类</p>
+        <h2>水果</h2>
+        <a href="test01.html">返回首页</a>
+
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="apple.jpg" alt="apple">
+                <h2>有机苹果</h2>
+                <p>新鲜采摘，健康有机</p>
+                <p>价格：￥20/斤</p>
+                <label for="quantity">选择数量（斤）：</label>
+                <input type="number" id="quantity" min="1" value="1" style="width: 50px;">
+                <br><br>
+                <button onclick="buyProduct()">立即购买</button>
+                <button onclick="contactFarmer()">联系农户</button>
+            </div>
+
+            <script>
+            function buyProduct() {
+                var quantity = document.getElementById("quantity").value;
+                alert("购买成功，您选择了 " + quantity + " 斤梨子。");
+            }
+            
+            function contactFarmer() {
+                var message = prompt("请输入您的留言，农户会及时回复您：");
+                if (message) {
+                    alert("您的留言已发送给农户：\n" + message);
+                } else {
+                    alert("您未输入留言。");
+                }
+            }
+            </script>
+
+
+
+            <div class="product-item">
+                <img src="banana.jpg" alt="banana">
+                <h2>优质香蕉</h2>
+                <p>香甜可口，营养丰富</p>
+                <p>价格：￥15/斤</p>
+                <label for="quantity">选择数量（斤）：</label>
+                <input type="number" id="quantity" min="1" value="1" style="width: 50px;">
+                <br><br>
+                <button onclick="buyProduct()">立即购买</button>
+                <button onclick="contactFarmer()">联系农户</button>
+            </div>
+
+            <script>
+            function buyProduct() {
+                var quantity = document.getElementById("quantity").value;
+                alert("购买成功，您选择了 " + quantity + " 斤梨子。");
+            }
+            
+            function contactFarmer() {
+                var message = prompt("请输入您的留言，农户会及时回复您：");
+                if (message) {
+                    alert("您的留言已发送给农户：\n" + message);
+                } else {
+                    alert("您未输入留言。");
+                }
+            }
+            </script>
+
+
+
+            <div class="product-item">
+                <img src="mango.jpg" alt="mango">
+                <h2>菲律宾芒果</h2>
+                <p>香甜多汁，夏季解暑佳品</p>
+                <p>价格：￥20/斤</p>
+                <label for="quantity">选择数量（斤）：</label>
+                <input type="number" id="quantity" min="1" value="1" style="width: 50px;">
+                <br><br>
+                <button onclick="buyProduct()">立即购买</button>
+                <button onclick="contactFarmer()">联系农户</button>
+            </div>
+
+            <script>
+            function buyProduct() {
+                var quantity = document.getElementById("quantity").value;
+                alert("购买成功，您选择了 " + quantity + " 斤梨子。");
+            }
+            
+            function contactFarmer() {
+                var message = prompt("请输入您的留言，农户会及时回复您：");
+                if (message) {
+                    alert("您的留言已发送给农户：\n" + message);
+                } else {
+                    alert("您未输入留言。");
+                }
+            }
+            </script>
+
+
+
+            <div class="product-item">
+                <img src="peach.jpg" alt="peach">
+                <h2>甜美桃子</h2>
+                <p>鲜甜可口，汁水丰富</p>
+                <p>价格：￥18/斤</p>
+                <label for="quantity">选择数量（斤）：</label>
+                <input type="number" id="quantity" min="1" value="1" style="width: 50px;">
+                <br><br>
+                <button onclick="buyProduct()">立即购买</button>
+                <button onclick="contactFarmer()">联系农户</button>
+            </div>
+
+            <script>
+            function buyProduct() {
+                var quantity = document.getElementById("quantity").value;
+                alert("购买成功，您选择了 " + quantity + " 斤梨子。");
+            }
+            
+            function contactFarmer() {
+                var message = prompt("请输入您的留言，农户会及时回复您：");
+                if (message) {
+                    alert("您的留言已发送给农户：\n" + message);
+                } else {
+                    alert("您未输入留言。");
+                }
+            }
+            </script>
+
+
+
+            <div class="product-item">
+                <img src="grape.jpg" alt="grape">
+                <h2>新鲜葡萄</h2>
+                <p>甜美欲滴，口感极佳</p>
+                <p>价格：￥30/斤</p>
+                <label for="quantity">选择数量（斤）：</label>
+                <input type="number" id="quantity" min="1" value="1" style="width: 50px;">
+                <br><br>
+                <button onclick="buyProduct()">立即购买</button>
+                <button onclick="contactFarmer()">联系农户</button>
+            </div>
+
+            <script>
+            function buyProduct() {
+                var quantity = document.getElementById("quantity").value;
+                alert("购买成功，您选择了 " + quantity + " 斤梨子。");
+            }
+            
+            function contactFarmer() {
+                var message = prompt("请输入您的留言，农户会及时回复您：");
+                if (message) {
+                    alert("您的留言已发送给农户：\n" + message);
+                } else {
+                    alert("您未输入留言。");
+                }
+            }
+            </script>
+
+
+
+            <div class="product-item">
+                <img src="orange.jpg" alt="orange">
+                <h2>新鲜橙子</h2>
+                <p>汁多味美，营养丰富</p>
+                <p>价格：￥25/斤</p>
+                <label for="quantity">选择数量（斤）：</label>
+                <input type="number" id="quantity" min="1" value="1" style="width: 50px;">
+                <br><br>
+                <button onclick="buyProduct()">立即购买</button>
+                <button onclick="contactFarmer()">联系农户</button>
+            </div>
+
+            <script>
+            function buyProduct() {
+                var quantity = document.getElementById("quantity").value;
+                alert("购买成功，您选择了 " + quantity + " 斤梨子。");
+            }
+            
+            function contactFarmer() {
+                var message = prompt("请输入您的留言，农户会及时回复您：");
+                if (message) {
+                    alert("您的留言已发送给农户：\n" + message);
+                } else {
+                    alert("您未输入留言。");
+                }
+            }
+            </script>
+
+
+
+            <div class="product-item">
+                <img src="pineapple.jpg" alt="pineapple">
+                <h2>菠萝</h2>
+                <p>酸甜适中，清凉怡人</p>
+                <p>价格：￥15/斤</p>
+                <label for="quantity">选择数量（斤）：</label>
+                <input type="number" id="quantity" min="1" value="1" style="width: 50px;">
+                <br><br>
+                <button onclick="buyProduct()">立即购买</button>
+                <button onclick="contactFarmer()">联系农户</button>
+            </div>
+
+            <script>
+            function buyProduct() {
+                var quantity = document.getElementById("quantity").value;
+                alert("购买成功，您选择了 " + quantity + " 斤梨子。");
+            }
+            
+            function contactFarmer() {
+                var message = prompt("请输入您的留言，农户会及时回复您：");
+                if (message) {
+                    alert("您的留言已发送给农户：\n" + message);
+                } else {
+                    alert("您未输入留言。");
+                }
+            }
+            </script>
+
+
+
+            <div class="product-item">
+                <img src="pear.jpg" alt="pear">
+                <h2>甜脆梨</h2>
+                <p>水分多，脆嫩可口</p>
+                <p>价格：￥10/斤</p>
+                <label for="quantity">选择数量（斤）：</label>
+                <input type="number" id="quantity" min="1" value="1" style="width: 50px;">
+                <br><br>
+                <button onclick="buyProduct()">立即购买</button>
+                <button onclick="contactFarmer()">联系农户</button>
+            </div>
+
+            <script>
+            function buyProduct() {
+                var quantity = document.getElementById("quantity").value;
+                alert("购买成功，您选择了 " + quantity + " 斤梨子。");
+            }
+            
+            function contactFarmer() {
+                var message = prompt("请输入您的留言，农户会及时回复您：");
+                if (message) {
+                    alert("您的留言已发送给农户：\n" + message);
+                } else {
+                    alert("您未输入留言。");
+                }
+            }
+            </script>
+            
+
+            <!-- 更多产品项 -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 农产品直销平台. All rights reserved.</p>
+    </footer>
+</body>
+</html>
